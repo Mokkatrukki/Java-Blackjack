@@ -1,0 +1,83 @@
+Java Blackjack by Samu Aapa & Leo Vainio (Started 17.11.2011)
+-----------------------------------------------------------------------------------------------
+
+BlackjackRunApplet.class
+- extends applet
+- implements mouselistener
+
+- init()
+	* luo uuden CardDeck-olion, new CardDeck
+	* luo korttipakan uuteen olioon, cardDeck.createDeck()
+	* drawCard()
+	* startGame();
+
+- paint()
+	* 
+	* 
+- drawCard(string s, int n)
+	* piirt‰‰ kortin, annetaan parametrein‰ maa ja numero
+- startGame()
+	* aloittaa pelin
+- endGame()
+	string player = readName()
+	* DBConnection.saveScore(8912, player)
+- string Readname()
+	* lukee pelaajan nimen, jostain tekstikent‰st‰/n‰ppiksen inputista
+	return string nimi
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+Card.class 
+- String suit   (maa)
+- int number
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+CardDeck.class
+- Card[52] cardDeckArray
+
+- createDeck()
+	* alustaa cardDeckArray taulukon
+
+- resetDeck()
+	* resetoi korttipakan
+- removeCard(Card c)
+	* poistaa cardDeckArray taulukosta kortin c
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+DBConnection.class
+- t‰ytyy olla static ettei tarvii luoda oliota?
+- perus yhteyden luonnit jne.
+- jos yhteys ep‰onnistuu, kirjoitetaan tulos tekstitiedostoon?(toteutus lˆytyy laskin teht‰v‰st‰ Samulta)
+
+saveScore(int s, String name)
+	* tallentaa pisteet tietokantaan
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+GameLogic.class
+- t‰t‰ kutsutaan BlackjackRunApplet luokasta, sis‰lt‰‰ kaiken pelilogiikan
+
+- checkVictory(Card[] playerCards)
+- Card[] dealDealerCards(CardDeck cD, Card[] playerCards)
+	ottaa vastaan pelipakan, jotta tiet‰‰ mit‰ kortteja on j‰ljell‰, sek‰ pelaajan nostamat kortit
+
+	* return Card[]
+
+
+
+
+-----------------------------------------------------------------------------------------------
