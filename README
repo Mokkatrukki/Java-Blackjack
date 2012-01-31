@@ -15,14 +15,14 @@ BlackjackRunApplet.class
 	* 
 	* 
 - drawCard(string s, int n)
-	* piirtää kortin, annetaan parametreinä maa ja numero
+	* piirtï¿½ï¿½ kortin, annetaan parametreinï¿½ maa ja numero
 - startGame()
 	* aloittaa pelin
 - endGame()
 	string player = readName()
 	* DBConnection.saveScore(8912, player)
 - string Readname()
-	* lukee pelaajan nimen, jostain tekstikentästä/näppiksen inputista
+	* lukee pelaajan nimen, jostain tekstikentï¿½stï¿½/nï¿½ppiksen inputista
 	return string nimi
 
 
@@ -56,9 +56,9 @@ CardDeck.class
 -----------------------------------------------------------------------------------------------
 
 DBConnection.class
-- täytyy olla static ettei tarvii luoda oliota?
+- tï¿½ytyy olla static ettei tarvii luoda oliota?
 - perus yhteyden luonnit jne.
-- jos yhteys epäonnistuu, kirjoitetaan tulos tekstitiedostoon?(toteutus löytyy laskin tehtävästä Samulta)
+- jos yhteys epï¿½onnistuu, kirjoitetaan tulos tekstitiedostoon?(toteutus lï¿½ytyy laskin tehtï¿½vï¿½stï¿½ Samulta)
 
 saveScore(int s, String name)
 	* tallentaa pisteet tietokantaan
@@ -69,15 +69,15 @@ saveScore(int s, String name)
 -----------------------------------------------------------------------------------------------
 
 GameLogic.class
-- tätä kutsutaan BlackjackRunApplet luokasta, sisältää kaiken pelilogiikan
+- tï¿½tï¿½ kutsutaan BlackjackRunApplet luokasta, sisï¿½ltï¿½ï¿½ kaiken pelilogiikan
 
 - checkVictory(Card[] playerCards)
 - Card[] dealDealerCards(CardDeck cD, Card[] playerCards)
-	ottaa vastaan pelipakan, jotta tietää mitä kortteja on jäljellä, sekä pelaajan nostamat kortit
+	ottaa vastaan pelipakan, jotta tietï¿½ï¿½ mitï¿½ kortteja on jï¿½ljellï¿½, sekï¿½ pelaajan nostamat kortit
 
 	* return Card[]
 
 
 
-
+sika ja juusto
 -----------------------------------------------------------------------------------------------
